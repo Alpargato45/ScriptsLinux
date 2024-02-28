@@ -4,7 +4,7 @@
 
 read -p "Introduzca el directorio en el que quieres buscar: " directorio
 
-if [ ! -d "$directorio" ];then
+if [ ! -d "$directorio" ];then #-d significa si un DIRECTORIO existe
     echo "El directorio no existe."
     exit 1 #Significa que acaba el programa de forma no exitosa
            #En este caso si no encuentra el directorio acaba el script
